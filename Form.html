@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário</title>
+<style>
+body {
+		   width: 495px;
+		   
+	
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+form {
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #00f;
+    border-radius: 20px;
+}
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: grey;
+    color: #fff;
+		   font-weight: bold;
+    border-radius: 10px 2px;
+	   	outline: none;
+    border-bottom: 2px solid #f4f4f4;
+		   width: 380px
+} 
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    
+}
+input[type="submit"]:hover {
+    background-color: #000;
+    color: #00f;}
+
+		.titulo{
+				display:flex;
+				justify-content:center;
+				
+		}
+</style>
+</head>
+
+<body> 
+		<h1 class="titulo">Formulário de Inscrição</h1>
+		<h4 class="titulo">Pré venda de um jogo:</h4>
+<form>
+		
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required> 
+    
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" name="username" maxlength="24" minlength="4" required>
+    
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age" maxlength="2" minlength="1" required>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Sexo:</label> <br>
+   Feminino <input type="radio" id="f" name="f" required>
+		<br>
+	Masculino	<input type="radio" id="f" name="f" required>
+		<br>
+	Prefiro não dizer	<input type="radio" id="f" name="f" required>
+		<br> <br>
+    
+    <label for="address">Endereço:</label>
+    <input type="text" id="address" name="address" required>
+    
+    <label for="phone">Telefone:</label>
+    <input type="number" id="number" name="nuber" required>
+    
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
