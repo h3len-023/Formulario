@@ -8,14 +8,13 @@
 <title>Formulário</title>
 <style>
 body {
-		   width: 495px;
-		   
-	
+	width: 495px;
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
 }
 form {
+    text-align: center;
     max-width: 400px;
     margin: 20px;
     padding: 20px;
@@ -23,14 +22,14 @@ form {
     border-radius: 20px;
 }
 input[type="text"], input[type="email"], input[type="number"] {
-    width: 100%;
+    width: 100px;
     padding: 10px;
     margin: 10px 0;
     border: none;
     background-color: grey;
     color: #fff;
 		   font-weight: bold;
-    border-radius: 10px 2px;
+    border-radius: 10px 20px;
 	   	outline: none;
     border-bottom: 2px solid #f4f4f4;
 		   width: 380px
@@ -51,12 +50,17 @@ input[type="submit"]:hover {
 				justify-content:center;
 				
 		}
+div{
+    display: flex;
+    justify-content: center;
+}
 </style>
 </head>
 
 <body> 
 		<h1 class="titulo">Formulário de Inscrição</h1>
 		<h4 class="titulo">Pré venda de um jogo:</h4>
+        <div>
 <form>
 		
     <label for="name">Nome:</label>
@@ -83,10 +87,11 @@ input[type="submit"]:hover {
     <input type="text" id="address" name="address" required>
     
     <label for="phone">Telefone:</label>
-    <input type="number" id="number" name="nuber" required>
+    <input type="number" id="number" name="number" required>
     
     <input type="submit" value="Enviar">
 </form>
+</div>
 </body>
 </html>
 
